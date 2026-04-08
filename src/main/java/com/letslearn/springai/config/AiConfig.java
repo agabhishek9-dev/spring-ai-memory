@@ -115,8 +115,6 @@ public class AiConfig {
                          */
                         messageChatMemoryAdvisor,
 
-//                      new TokenPrintAdvisor(),
-
                         /*
                          * TokenPrintAdvisor
                          *
@@ -127,6 +125,7 @@ public class AiConfig {
                          *
                          * It is commented out right now, so it is inactive.
                          */
+//                      new TokenPrintAdvisor(),     // custom advisor
 
                         /*
                          * SimpleLoggerAdvisor
@@ -134,7 +133,7 @@ public class AiConfig {
                          * Built-in Spring AI advisor that logs request/response
                          * details for debugging and learning.
                          */
-                        new SimpleLoggerAdvisor()
+                        new SimpleLoggerAdvisor()   // in-built advisor
 
                         /*
                          * SafeGuardAdvisor
@@ -144,7 +143,7 @@ public class AiConfig {
                          *
                          * It is currently disabled.
                          */
-//                      , new SafeGuardAdvisor(List.of("cheat", "fraud", "hack"))
+//                      , new SafeGuardAdvisor(List.of("cheat", "fraud", "hack"))    // in-built advisor
                 )
 
                 /*
